@@ -11,7 +11,6 @@
 桌面端视频文件扫描统计工具，支持查看码率/时长/大小，批量生成 FFmpeg 转码命令。</p>
 
 <p align="center">
-  <a href="#screenshots--截图">Screenshots</a> ·
   <a href="#features--功能">Features</a> ·
   <a href="#quick-start--快速开始">Quick Start</a> ·
   <a href="#requirements--环境要求">Requirements</a> ·
@@ -19,28 +18,6 @@
 </p>
 
 ---
-
-## Screenshots / 截图
-
-> Replace with your own screenshots — use [ShareX](https://getsharex.com/) (Win) or built-in snipping tool to capture.
-
-| Dark / 深色 | Light / 浅色 |
-|------------|-------------|
-| <img src="screenshots/dark.png" width="450"> | <img src="screenshots/light.png" width="450"> |
-
-<details>
-<summary>How to add screenshots / 如何添加截图</summary>
-
-1. Run the app, open a folder, switch to dark/light theme
-2. Use `Win + Shift + S` to screenshot each mode
-3. Save as `screenshots/dark.png` and `screenshots/light.png` in the repo
-4. Commit and push — they will appear here
-
-</details>
-
-## Demo / 演示
-
-> Record a GIF demo with [ScreenToGif](https://www.screentogif.com/) (Windows) or [Peek](https://github.com/phw/peek) (Linux).
 
 ## Features / 功能
 
