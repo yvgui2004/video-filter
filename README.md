@@ -16,12 +16,59 @@ A desktop video file scanner and statistics analyzer built with Python and Custo
 
 ## Requirements / 环境要求
 
-- Python 3.10+
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
-- FFmpeg (ffprobe) in PATH / 系统 PATH 中需有 FFmpeg
+### 1. Python 3.10+
+
+[python.org](https://www.python.org/downloads/) 下载安装，安装时勾选 **"Add Python to PATH"**。
+
+```bash
+python --version   # 确认版本 ≥ 3.10
+```
+
+### 2. CustomTkinter
 
 ```bash
 pip install customtkinter
+```
+
+或使用国内镜像加速：
+
+```bash
+pip install customtkinter -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+### 3. FFmpeg（包含 ffprobe）
+
+程序依赖 `ffprobe` 读取视频的时长和码率信息，必须安装 FFmpeg 并添加到系统 PATH。
+
+**Windows：**
+1. 下载 [ffmpeg-master-latest-win64-gpl.zip](https://github.com/BtbN/FFmpeg-Builds/releases)
+2. 解压到任意目录（如 `C:\ffmpeg`）
+3. 将 `bin` 目录（如 `C:\ffmpeg\bin`）添加到系统 PATH：
+   - 右键"此电脑" → 属性 → 高级系统设置 → 环境变量
+   - 在"系统变量"中找到 `Path`，添加 `C:\ffmpeg\bin`
+4. 重启终端，验证：
+
+```bash
+ffprobe -version   # 确认可用
+```
+
+**macOS：**
+
+```bash
+brew install ffmpeg
+```
+
+**Linux (Debian/Ubuntu)：**
+
+```bash
+sudo apt install ffmpeg
+```
+
+### 4. 验证环境
+
+```bash
+python -c "import customtkinter; print('OK')"   # 应输出 OK
+ffprobe -version | head -1                       # 应显示版本号
 ```
 
 ## Usage / 使用方式
